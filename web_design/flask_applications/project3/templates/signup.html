@@ -1,0 +1,75 @@
+{% extends "index.html" %}
+
+
+{% block data %}
+<p style='color:red;text-align:center'> {{ error }} </p>
+
+<form style="text-align: center" method='POST' action='/mksignup/'>
+
+<div>
+    <label>
+        UserName* : <input type='text' name='username' placeholder="eg. john123" required>
+    </label>
+</div>
+
+<div>
+    <label>
+        First Name* : <input type='text' name='fname' placeholder="eg. John" required>
+                
+    </label>
+</div>
+
+<div>
+    <label>
+        Last Name* : <input type='text' name='lname' placeholder="eg. Watson" required>
+        
+    </label>
+</div>
+
+<div>
+    <label>
+        Email* : <input type='email' name='email' placeholder="eg. watson.john@example.com" required>
+        
+    </label>
+</div>
+
+<div>
+    <label>
+        Phone Number* : <input type='text' name='ph_no' placeholder="eg. +91" required>
+              
+    </label>
+</div>
+<div>
+    <label>
+        Birthday* : <input type='date' name='birthday' required>
+        
+    </label>
+</div>
+
+<div>
+    <label>
+        password* : <input type='password' name='password' placeholder="*****" required>
+        
+    </label>
+</div>
+
+
+<div>
+    <label>
+        Image : <input type='file' name='pic'>
+        
+    </label>
+</div>
+
+<div>
+    <label>
+    <input type='submit' value='SignUp'>
+        
+    </label>
+</div>
+
+
+
+</form>
+
+{% endblock %}

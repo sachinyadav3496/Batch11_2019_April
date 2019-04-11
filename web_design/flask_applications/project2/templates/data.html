@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+
+
+{% block data %}
+
+<h1>Hello this is another page</h1>
+
+<p> Take moment and Try This </p>
+
+<table>
+    <tr>
+        <td> Key </td>
+        <td> VAlue </td>
+    </tr>
+    {% for key,value in data.items() %}
+       
+        
+        <tr>
+            <td> {{ key }} </td>
+            <td> {{ value }} </td>
+        </tr>
+        
+    {% endfor %}
+</table> 
+
+
+{% endblock %}

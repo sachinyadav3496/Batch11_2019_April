@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block data %}
+<h1>This is Home Page</h1>
+<ul>
+
+    {% for var in data %}
+        <li> {{ var }} </li>
+    {% endfor %}
+
+</ul>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+
+{% block data %}
+<ul>
+{% for key,value in data.items() %}
+    <li> {{ key }} = {{ value }}</li>
+{% endfor %}
+</ul>
+{% endblock %}
