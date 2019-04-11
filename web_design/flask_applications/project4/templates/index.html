@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block data %}
+
+{% if error %}
+<p style='text-align: center;color:red'>
+    {{ error }}
+</p>
+{% endif %}
+
+<form style='text-align: center;' method="POST" action="/login/">
+
+    <label>Email : <input type="email" name="email" placeholder="eg. john123@gmail.com" >  </label>
+   <br/>
+    <label>Password : <input type="password" name="password"  placeholder="*****" > </label>
+    <br/>
+    <input type="submit" value="Login">
+</form>
+
+
+{% endblock %}
+
+
+
+
+    <!-- <br/>
+    <label>DOB : <input type='date'></label>
+    <br/>
+    <label>LoggedIN <input type='checkbox'></label>
+    <br/>
+    <lable>Language <input type="radio"></lable>
+    <br/>
+    <label>
+        <select>
+            <option>English</option>
+            <option>Hindi</option>
+            <option>Other</option>
+        </select>
+    </label>
+    <br/> -->
+    

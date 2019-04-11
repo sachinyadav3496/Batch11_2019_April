@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title> {{ title }} </title> <!-- jinja variable-->
+ <link rel="stylesheet" type="text/css" href="/static/css/main.css" >
+</head>
+<body>
+    <div>
+            <a href="/">Home</a>
+            {% if flag %}
+            <a href="/logout/">LOGOUT</a>
+            {% else %}
+            <a href="/signup/">SignUp</a>
+            {% endif %}
+            {% block data %}
+            {% endblock %}
+    </div>
+</body>
+</html>
