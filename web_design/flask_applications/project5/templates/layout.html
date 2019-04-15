@@ -1,0 +1,49 @@
+
+<!Doctype html>
+<html>
+
+
+<head>
+
+    <title> {{ title }} </title>
+    <link rel='stylesheet' type='text/css' href="/static/css/bootstrap.min.css">
+    <link rel='stylesheet' type='text/css' href="/static/css/main.css">
+</head>
+
+
+<body>
+
+    <div class="header">
+        <h1>Grras Solutions Pvt. Ltd, Jaipur</h1> 
+        {% block header %}
+        {% endblock %}
+    </div>
+
+    <div class="left">
+        <hr>
+        {% block left %}
+        {% endblock %}
+    </div>
+    <div class='center'>
+        <hr>
+        {% block center %}
+        {% endblock %}
+    </div>
+
+    <div class='right'>
+        <hr>
+        {% block right %}
+        {% endblock %}
+    </div>
+
+    <div class='footer'>
+<hr>
+        {% block footer %}
+        {% endblock %}
+
+        <h1> All Rights are Reserved at &copy; Grras Solutions Pvt. Ltd, Jaipur</h1>
+    </div>
+</body>
+
+
+</html>
