@@ -26,7 +26,8 @@
     top: 20%; 
     left: 20%;
     float : left; 
-    overflow: scroll;
+    overflow-y: scroll;
+    box-sizing: content-box;
  
 }
 
