@@ -15,6 +15,16 @@
 
     <div class="header">
         <h1>Grras Solutions Pvt. Ltd, Jaipur</h1> 
+
+        <a href="/">HOME</a>
+        <a href="/contact/">Contact</a>
+        <a href="/aboutus/">About Us</a>
+
+        {% if flag %}
+        <a href="/logout/">Logout</a>
+        {% else %}
+        <a href="/signup/">SignUp</a>
+        {% endif %}
         {% block header %}
         {% endblock %}
     </div>
