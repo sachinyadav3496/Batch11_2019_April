@@ -1,0 +1,19 @@
+
+<!Doctype html>
+
+<head>
+
+    <title> {{ title }} </title>
+</head>
+
+<body>
+<div>
+    <h1> Welcome To Django </h1>
+    <a href="/">HOME</a>
+    <a href="/data/">DATA</a>
+</div>
+    <div>
+        {% block main %}
+        {% endblock %}
+    </div>
+</body>
