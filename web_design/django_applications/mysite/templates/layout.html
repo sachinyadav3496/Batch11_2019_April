@@ -4,6 +4,7 @@
 <head>
 
     <title> {{ title }} </title>
+    <link rel='stylesheet' type='text/css' href='/static/css/main.css'>
 </head>
 
 <body>
@@ -11,6 +12,7 @@
     <h1> Welcome To Django </h1>
     <a href="/">HOME</a>
     <a href="/data/">DATA</a>
+    <a href="{% url 'blog' %}">Blog</a>
 </div>
     <div>
         {% block main %}
