@@ -1,0 +1,21 @@
+<!DOCTYPE html> 
+
+<html>
+
+<head>
+<title> {{ title }} </title>
+<link rel='stylesheet' type='text/css' href='/static/css/main.css' > 
+</head>
+<body>
+
+    <h1>Grras Solutions Pvt. Ltd, Jaipur</h1>
+    <a href="{% url 'home' %}">HOME</a>
+    <a href="{% url 'blog' %}">blog</a>
+    <a href="{% url 'grras' %}">grras</a>
+
+    <div >
+        {% block main %}
+        {% endblock %}
+    </div>
+</body>
+</html>
