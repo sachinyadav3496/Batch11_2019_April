@@ -8,3 +8,4 @@ urlpatterns = [
     path('pages/<int:year>/<int:month>/',views.page_month_view),
     path('pages/<int:year>/<int:month>/<int:day>/',views.page_day_view),
 ]
+
