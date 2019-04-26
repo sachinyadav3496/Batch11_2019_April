@@ -5,4 +5,12 @@
 
 <h1 style='color:red'> Welcome to Home Page Powered by Django</h1>
 
+{% for each_blog in data %}
+
+<h1> {{ each_blog.title }}</h1>
+<h4>by - {{ each_blog.author }}, {{ each_blog.date_publish }} </h4>
+<h5> on {{ each_blog.topics }} </h5>>
+<p> {{ each_blog.content }} </p>
+{% endfor %}
+
 {% endblock %}

@@ -1,9 +1,21 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from blog.models import Blog 
 # Create your views here.
 def index(request):
+    all_blog = Blog.objects.all().order_by('-date_publish')
+    data = []
+    for each_blog in all_blog : 
+        blog = { 
+            'title': each_blog.title, 
+            'topics' : each_blog.topic,
+            'author' : each_blog.author.username,
+            'content' : each_blog.content,
+            'date_publish' : each_blog.date_publish, 
+        }
+        data.append(blog)
 
-    return render(request,'blog/index.html')
+    return render(request,'blog/index.html',{'data':data})
 
 def data(request,name='Django'):
     return HttpResponse(f"Welcome to data mr. {name}")
